@@ -5,6 +5,7 @@
 
 <!-- google integration -->
 
+
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
