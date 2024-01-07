@@ -1,0 +1,260 @@
+video link : https://youtu.be/VgMzp3-SzuY?si=BUFaVNMn3Apj7io6
+============
+
+
+Firebase project Email id : santhakumar3490@gmail.com
+===========================
+Firebase Project Name : blocauth
+=======================
+
+follow the above video link..
+
+1. Adding firebase to ios and android
+2. Doing google and facebook authentication
+3. Managing shared preferences
+
+
+Note : 
+1. Please install the important extension ( Pubspec Assist extension) to add multiple dependency in one time.
+ steps : 1. install Pubspec Assist extension
+         2. after install this dependency then click Command + Shift + P 
+         3. then you can see the Dard: Add Dependency option 
+         4. then select that option...
+         5. then insert your dependency name one by one with useing comma (,)
+         6. you can insert multiple dependency
+         7. finally press enter 
+         8. you can see the flutter pub get alert in bottom right corner of your screen
+         9. thats it.....
+
+
+keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+
+santhakumar@Santhas-MacBook-Air ios % arch -x86_64 pod install  \\ don't use this code because it is not work in macbook air m1..
+
+
+
+Flutter iOS pod install project 
+
+Follow below steps :
+
+1. Open your terminal
+2. Dont’t go your flutter project path
+3. Just type —> flutter doctor
+4. Then just check any error is showing while run flutter doctor command and don’t forget to fix issue using ChatGPT and Suggestion command
+5. Then open flutter project folder into terminal
+6. Just type —> flutter clean
+7. Then just type —> flutter pub get
+8. Then open iOS folder into your flutter project folder
+9. Then type —> pod install
+10. It will take time more than 10 minutes depending upon your internet speed and your system memory
+11. Note : I faced no device space issue while run the pod install code
+12. Finally you will get “ pod installation completed status with all the packages installed “ in your project
+
+    Example  code :
+===============
+
+	santhakumar@Santhas-MacBook-Air ~ % clear
+
+santhakumar@Santhas-MacBook-Air ~ % cd Desktop
+santhakumar@Santhas-MacBook-Air Desktop % cd Flutter*
+santhakumar@Santhas-MacBook-Air Flutter Development % cd blocauth
+santhakumar@Santhas-MacBook-Air blocauth % cd ios     
+santhakumar@Santhas-MacBook-Air ios % rm -rf Pods
+santhakumar@Santhas-MacBook-Air ios % pod install
+Analyzing dependencies
+cloud_firestore: Using Firebase SDK version '10.18.0' defined in 'firebase_core'
+firebase_auth: Using Firebase SDK version '10.18.0' defined in 'firebase_core'
+firebase_core: Using Firebase SDK version '10.18.0' defined in 'firebase_core'
+Downloading dependencies
+Installing AppAuth (1.6.2)
+Installing BoringSSL-GRPC (0.0.24)
+Installing FBAEMKit (16.2.1)
+Installing FBSDKCoreKit (16.2.1)
+Installing FBSDKCoreKit_Basics (16.2.1)
+Installing FBSDKLoginKit (16.2.1)
+Installing Firebase (10.18.0)
+Installing FirebaseAppCheckInterop (10.19.0)
+Installing FirebaseAuth (10.18.0)
+Installing FirebaseCore (10.18.0)
+Installing FirebaseCoreExtension (10.19.0)
+Installing FirebaseCoreInternal (10.19.0)
+Installing FirebaseFirestore (10.18.0)
+Installing FirebaseFirestoreInternal (10.19.0)
+Installing FirebaseSharedSwift (10.19.0)
+Installing Flutter (1.0.0)
+Installing GTMAppAuth (2.0.0)
+Installing GTMSessionFetcher (3.2.0)
+Installing GoogleSignIn (7.0.0)
+Installing GoogleUtilities (7.12.0)
+Installing PromisesObjC (2.3.1)
+Installing RecaptchaInterop (100.0.0)
+Installing abseil (1.20220623.0)
+Installing cloud_firestore (4.14.0)
+Installing firebase_auth (4.16.0)
+Installing firebase_core (2.24.2)
+Installing flutter_facebook_auth (6.0.3)
+Installing flutter_secure_storage (6.0.0)
+Installing gRPC-C++ (1.49.1)
+Installing gRPC-Core (1.49.1)
+Installing google_sign_in_ios (0.0.1)
+Installing leveldb-library (1.22.2)
+Installing nanopb (2.30909.1)
+Installing path_provider_foundation (0.0.1)
+Generating Pods project
+Integrating client project
+Pod installation complete! There are 8 dependencies from the Podfile and 34 total pods installed.
+
+[!] CocoaPods did not set the base configuration of your project because your project already has a custom config set. In order for CocoaPods integration to work at all, please either set the base configurations of the target `Runner` to `Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig` or include the `Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig` in your build configuration (`Flutter/Release.xcconfig`).
+santhakumar@Santhas-MacBook-Air ios % 
+
+
+13 .then run your flutter project in your iOS emulator…
+
+
+
+App Diagram Net :
+======================
+
+Web link : https://app.diagrams.net
+
+Note : app diagram net in the online flowchart for app development tool
+====
+
+
+connectivity_plus package from pub.dev website
+===============================================
+
+web link : https://pub.dev/packages/connectivity_plus
+
+
+
+Note : 
+========
+Cloud Firestore
+-----------------
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if request.auth!= null;
+    }
+  }
+}
+
+Note : add this line ( allow read, write: if request.auth!= null; ) in your project firebase account "Cloud Firestore" option
+-------
+
+
+Note : don't forget to add GoogleService-Info.plist file from firbase for ios. and this filed configurations
+<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.409956614773-6odqv1oskvns8196lvdp1knf89uqbn9r</string>
+	
+    above reversed client id need to past into info.plist file example below
+
+for Ios :
+=========
+
+add below code into info.plist Files
+------------------------------------
+
+<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.409956614773-6odqv1oskvns8196lvdp1knf89uqbn9r</string>
+			</array>
+		</dict>
+	</array>
+
+
+
+
+    Done above code used to Firebase with Google SignIn Successfully completed
+
+    ===============================================================================
+
+
+
+    Below code for Facebook SignIn With Firebase integration
+    =========================================================
+
+
+
+      
+keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64
+
+password :  android
+
+
+need to add below lines into string.xml file into andorid/main/res/value/string.xml
+
+
+
+<string name="facebook_app_id">1234</string>
+<string name="fb_login_protocol_scheme">fb1234</string>
+<string name="facebook_client_token">56789</string>
+
+
+
+need to add below code into Android Manifest file 
+
+
+
+    <activity android:name="com.facebook.FacebookActivity"
+        android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+        android:label="@string/app_name" />
+    <activity
+        android:name="com.facebook.CustomTabActivity"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="@string/fb_login_protocol_scheme" />
+        </intent-filter>
+    </activity>
+
+
+
+
+need to add below lines into AndroidManifest file 
+
+
+	<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+   	<meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+
+
+need to add below line into info.plist file for facebook
+
+<string>fbAPP-ID</string>
+
+
+
+
+note : pub.dev package library
+
+web link : https://pub.dev/packages/flutter_facebook_auth
+
+important web link : https://facebook.meedu.app/docs/6.x.x/login
+
+then select a "Make a login request option" in the left side
+
+important url below :
+=====================
+
+link : https://stackoverflow.com/questions/56917627/how-to-get-a-better-profile-pic-from-facebook-graph-api-using-flutter
+
+this link used to get code to show facebook profile image
+
+example code is:
+---------------
+
+final graphResponse = await http.get(
+    'https://graph.facebook.com/v2.12/me?fields=name,picture.width(800).height(800),first_name,last_name,email&access_token=${fbToken}');
+
+

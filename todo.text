@@ -1,0 +1,12 @@
+1. Adding firebase to ios and android
+2. Doing google and facebook authentication
+3. Managing shared preferences
+
+
+
+
+keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+
+santhakumar@Santhas-MacBook-Air ios % arch -x86_64 pod install
+
