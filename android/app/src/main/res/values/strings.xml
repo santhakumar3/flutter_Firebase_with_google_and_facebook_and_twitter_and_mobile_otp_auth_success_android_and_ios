@@ -2,10 +2,18 @@
 
 <resource>
     <string name="app_name">Flutter Auth</string>
+
+    <!-- live account -->
     
-<string name="facebook_app_id">809525194271950</string>
+<!-- <string name="facebook_app_id">809525194271950</string>
 <string name="fb_login_protocol_scheme">fb1234</string>
-<string name="facebook_client_token">c3f473364b42d903d0e4830da834387a</string>
+<string name="facebook_client_token">c3f473364b42d903d0e4830da834387a</string> -->
+
+<!-- test account -->
+
+<string name="facebook_app_id">881295410146540</string>
+<string name="fb_login_protocol_scheme">fb1234</string>
+<string name="facebook_client_token">5fedb4f60bf44f36f4f73e308e392c89</string>
 
 
 

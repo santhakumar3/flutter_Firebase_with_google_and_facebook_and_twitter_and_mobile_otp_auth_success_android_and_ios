@@ -134,6 +134,8 @@ String? get imageUrl => _imageUrl;
 
         final profile = jsonDecode(graphResponse.body);
 
+        print("outputdata: "+graphResponse.body);
+
         if(result.status == LoginStatus.success){
 
           try{

@@ -13,7 +13,15 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-			<string>fb809525194271950</string>
+
+			<!-- live facebook account -->
+
+			<!-- <string>fb809525194271950</string> -->
+
+			<!-- test facebook account -->
+
+			<string>fb881295410146540</string>
+
 			<string>com.googleusercontent.apps.409956614773-6odqv1oskvns8196lvdp1knf89uqbn9r</string>
 			</array>
 		</dict>
@@ -24,10 +32,21 @@
 
 	<!-- facebook integration -->
 
-	<key>FacebookAppID</key>
+     <!-- live account -->
+
+	<!-- <key>FacebookAppID</key>
 	<string>809525194271950</string>
 	<key>FacebookClientToken</key>
 	<string>c3f473364b42d903d0e4830da834387a</string>
+	<key>FacebookDisplayName</key>
+	<string>APP-NAME</string> -->
+
+	<!-- test account -->
+
+	<key>FacebookAppID</key>
+	<string>881295410146540</string>
+	<key>FacebookClientToken</key>
+	<string>5fedb4f60bf44f36f4f73e308e392c89</string>
 	<key>FacebookDisplayName</key>
 	<string>APP-NAME</string>
 
